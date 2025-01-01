@@ -1,0 +1,72 @@
+baseURL = 'https://tap1ra.github.io/'
+languageCode = 'ja'
+title = "tap1ra's online redume"
+theme = 'terminalcv'
+
+[params]
+version = "2.0.0"
+description = "tap1ra's online redume"
+exitLocation = "about:blank"
+source = true
+greeting = """
+ ttttt  aaaaa  pppp    1   rrrrr   aaaaa
+   t    a   a  p   p   1   r   r  a   a
+   t    aaaaa  pppp    1   rrrrr  aaaaa
+   t    a   a  p       1   r   r  a   a
+   t    a   a  p       111  r   r  a   a
+
+Welcome to my online resume
+
+Type 'help' for a list of available commands.
+Also try the all command.
+"""
+
+[params.prompt.core]
+text = "tap1ra@github.io"
+color = "pink"
+before = "["
+beforeColor = "red"
+after = "\\]"
+afterColor = "red"
+
+[params.prompt.separator]
+text = "-"
+
+[params.prompt.path]
+before = "["
+beforeColor = "red"
+text = "~"
+color = "blue"
+after = "\\]"
+afterColor = "red"
+
+[params.prompt.extra]
+text = ": "
+color = "orange"
+
+[params.whois.details]
+name = "Yasuaki Tahira"
+location = "Fukuoka, Japan"
+description = """
+これはtap1raがhugo + terminalcvで作成したページです。
+This is a page created by tap1ra using hugo + terminalcv.
+"""
+
+[[params.social.details]]
+name = "github"
+url = "https://github.com/tap1ra"
+
+[[params.social.details]]
+name = "Blog"
+url = "https://tapira.hatenablog.com/"
+
+[params.skills.settings]
+useLess = true
+
+[[params.languages.details]]
+name = "English"
+percentage = 20
+
+[[params.languages.details]]
+name = "Japanese"
+percentage = 100
