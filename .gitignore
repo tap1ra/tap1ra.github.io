@@ -2,7 +2,6 @@ public/*
 themes/*/static/
 themes/*/data/
 /.vscode/
-/.idea/
 /*.log
 *.swp
 *.min.css
