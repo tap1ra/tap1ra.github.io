@@ -1,0 +1,74 @@
+baseURL: "https://tap1ra.github.io/"
+title: My HomePage
+copyright: "© [tap1ra]()"
+paginate: 5
+theme: [PaperMod]
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts", "papermod"]
+
+minify:
+  disableXML: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Blog
+          url: https://tapira.hatenablog.com/
+        - name: GitHub
+          url: https://github.com/tap1ra
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  profileMode:
+    enabled: false
+    title: PaperMod
+    imageUrl: "images/profile.png"
+    imageTitle: my image
+    buttons:
+      - name: Blog
+        url: https://tapira.hatenablog.com/
+      - name: GitHub
+        url: https://github.com/tap1ra
+
+  homeInfoParams:
+    Title: "tap1ra's HomePage"
+    Content: >
+      - Hello to everyone in the world from Fukuoka, Japan.
+
+      - I love parakeets and tortoises.
+
+      - I like kayak fishing and motorcycling.
+
+  socialIcons:
+    - name: github
+      title: View Source on Github
+      url: "https://github.com/tap1ra"
+
+  assets:
+    disableHLJS: true
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
